@@ -1,0 +1,250 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="banner_top innerpage" id="home">
+	<div class="wrapper_top_w3layouts">
+		<div class="header_agileits">
+			<div class="logo inner_page_log">
+				<!-- <h1><a class="navbar-brand" href="{% url 'index' %}"><span>Branded</span> <i>Steps</i></a></h1> -->
+				<h1><a class="navbar-brand" style="border: none;" href="{% url 'index' %}">
+						<!-- <span>Branded</span> <i>Steps</i> -->
+						<img src="/static/images/brandedsteps.png" alt=""
+							style="height: 105px; width: 120px; border-radius: 10px;">
+					</a>
+				</h1>
+
+			</div>
+			<div class="overlay overlay-contentpush">
+				<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+				<nav>
+					<ul>
+						<li><a href="{% url 'index' %}" class="active">Home</a></li>
+						<li><a href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'shop' %}">Shop Now</a></li>
+						<li><a href="{% url 'videos' %}">Videos</a></li>
+						<li><a href="{% url 'shoesreviews' %}">Reviews</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mobile-nav-button">
+				<button id="trigger-overlay" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			</div>
+			<!-- cart details -->
+			<!-- <div class="top_nav_right">
+				<div class="shoecart shoecart2 cart cart box_1">
+					<form action="#" method="post" class="last">
+						<input type="hidden" name="cmd" value="_cart">
+						<input type="hidden" name="display" value="1">
+						<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					</form>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!-- //cart details -->
+	<!-- search -->
+	<!-- <div class="search_w3ls_agileinfo">
+		<div class="cd-main-header">
+			<ul class="cd-header-buttons">
+				<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+			</ul>
+		</div>
+		<div id="cd-search" class="cd-search">
+			<form action="#" method="post">
+				<input name="Search" type="search" placeholder="Click enter after typing...">
+			</form>
+		</div>
+	</div> -->
+	<!-- //search -->
+	<div class="clearfix"></div>
+	<!-- /banner_inner -->
+	<div class="services-breadcrumb_w3ls_agileinfo">
+		<div class="inner_breadcrumb_agileits_w3">
+
+			<ul class="short">
+				<li><a href="{% url 'index' %}">Home</a><i>|</i></li>
+				<li>About</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //banner_inner -->
+</div>
+
+
+<main class="header-offset content-wrapper about-wrapper">
+	<div class="terms-container">
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2">
+				<section class="terms-title">
+					<h1>Terms &amp; Conditions</h1>
+					<hr>
+				</section>
+
+				<div class="terms-body">
+					<h4><strong>Welcome to The Branded Steps. Please review the following basic terms that govern your use
+							of, and purchase of, products from our site. Please note that your use of our site
+							constitutes your agreement to follow and be bound by those terms.</strong></h4>
+					<hr>
+					<h3>Return Policy</h3>
+					<p>
+						we strive to ensure your satisfaction with every purchase. If, for any reason, you are not
+						completely satisfied with your new pair of shoes, we offer a hassle-free return policy. You can
+						return your shoes within 2 days of the purchase date for a full refund or exchange. To initiate
+						the return process, please ensure that the shoes are in their original condition, unworn, and in
+						the original packaging. Our customer service team is here to assist you throughout the return
+						process and address any concerns you may have. At Branded Steps, we value your trust and are
+						committed to providing you with the best footwear experience.
+					</p>
+					<hr>
+						<!-- FOOTER -->
+					<div class="container terms_footer">
+						<h3>Can't find what you're looking for? <a href="{% url 'contact' %}">Contact Us</a></h3>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.row -->
+	</div>
+	<!-- /.container -->
+</main>
+
+
+
+<!-- /Properties -->
+<div class="mid_slider_w3lsagile">
+	<div class="col-md-3 mid_slider_text">
+		<h5>Some More Shoes</h5>
+	</div>
+	<div class="col-md-9 mid_slider_info">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="2" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="item active">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g1.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g2.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g3.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g4.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g5.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g6.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g2.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g1.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g1.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g2.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g3.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g4.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g1.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g2.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g3.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3 slidering">
+							<div class="thumbnail"><img src="/static/images/g4.jpg" alt="Image" style="max-width:100%;">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="fa fa-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="fa fa-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+			<!-- The Modal -->
+
+		</div>
+	</div>
+
+	<div class="clearfix"> </div>
+</div>
+<!--//banner -->
+
+<!-- /newsletter-->
+<!-- <div class="newsletter_w3layouts_agile">
+		<div class="col-sm-6 newsleft">
+			<h3>Sign up for Newsletter !</h3>
+		</div>
+		<div class="col-sm-6 newsright">
+			<form action="#" method="post">
+				<input type="email" placeholder="Enter your email..." name="email" required="">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div class="clearfix"></div>
+	</div> -->
+<!-- //newsletter-->
+
+<!-- footer -->
+
+{% endblock %}

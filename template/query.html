@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="banner_top innerpage" id="home">
+	<div class="wrapper_top_w3layouts">
+		<div class="header_agileits">
+			<div class="logo inner_page_log">
+				<!-- <h1><a class="navbar-brand" href="{% url 'index' %}"><span>Branded</span> <i>Steps</i></a></h1> -->
+				<h1><a class="navbar-brand" style="border: none;" href="{% url 'index' %}">
+					<!-- <span>Branded</span> <i>Steps</i> -->
+					<img src="/static/images/brandedsteps.png" alt="" style="height: 105px; width: 120px; border-radius: 10px;">
+					</a>
+				</h1>
+			</div>
+			<div class="overlay overlay-contentpush">
+				<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+				<nav>
+					<ul>
+						<li><a href="{% url 'index' %}" class="active">Home</a></li>
+						<li><a href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'shop' %}">Shop Now</a></li>
+						<li><a href="{% url 'videos' %}">Videos</a></li>
+						<li><a href="{% url 'shoesreviews' %}">Reviews</a></li>
+						<li><a href="{% url 'gallery' %}">Gallery</a></li>
+						<li><a href="{% url 'contact' %}">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="mobile-nav-button">
+				<button id="trigger-overlay" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
+			</div>
+			<!-- cart details -->
+			<!-- <div class="top_nav_right">
+				<div class="shoecart shoecart2 cart cart box_1">
+					<form action="#" method="post" class="last">
+						<input type="hidden" name="cmd" value="_cart">
+						<input type="hidden" name="display" value="1">
+						<button class="top_shoe_cart" type="submit" name="submit" value=""><i class="fa fa-cart-arrow-down" aria-hidden="true"></i></button>
+					</form>
+				</div>
+			</div> -->
+		</div>
+	</div>
+	<!-- //cart details -->
+	<!-- search -->
+	<!-- <div class="search_w3ls_agileinfo">
+		<div class="cd-main-header">
+			<ul class="cd-header-buttons">
+				<li><a class="cd-search-trigger" href="#cd-search"> <span></span></a></li>
+			</ul>
+		</div>
+		<div id="cd-search" class="cd-search">
+			<form action="#" method="post">
+				<input name="Search" type="search" placeholder="Click enter after typing...">
+			</form>
+		</div>
+	</div> -->
+	<!-- //search -->
+	<div class="clearfix"></div>
+	<!-- /banner_inner -->
+	<div class="services-breadcrumb_w3ls_agileinfo">
+		<div class="inner_breadcrumb_agileits_w3">
+
+			<ul class="short">
+				<li><a href="{% url 'index' %}">Home</a><i>|</i></li>
+				<li>Contact</li>
+			</ul>
+		</div>
+	</div>
+	<!-- //banner_inner -->
+</div>
+
+	<!-- //banner -->
+	<!-- top Products -->
+	<div class="ads-grid_shop">
+		<div class="shop_inner_inf">
+			<h3 class="head">Request A Quote</h3>
+			<p class="head_para">HAVE ANY QUESTIONS</p>
+			<div class="inner_section_w3ls">
+				<div class="col-md-12 contact_grid_right">
+					<h6>Feel free to fill this form, whats in your mind</h6>
+					<form action="{% url 'query' %}" method="post" enctype="multipart/form-data">
+						{% csrf_token %}
+						<div class="col-md-6 col-sm-6 contact_left_grid">
+							<input type="text" name="Name" placeholder="Name" required="">
+							<input type="email" name="Email" placeholder="Email" required="">
+						</div>
+						<div class="col-md-6 col-sm-6 contact_left_grid">
+							<input type="text" name="Telephone" placeholder="Telephone" required="">
+							<input type="text" name="Address" placeholder="Address" required="">
+						</div>
+						<div class="col-md-6 col-sm-6 contact_left_grid">
+							<label for="Image">Image:</label>
+							<input type="file" class="form-control" name="Image" required style="background: #f6f9fb;">
+						</div>
+
+						<div class="clearfix"> </div>
+						<textarea name="Message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
+						<input type="submit" value="Submit">
+						<input type="reset" value="Clear">
+					</form>
+				</div>
+				<div class="clearfix"> </div>
+
+			</div>
+
+			<div class="clearfix"></div>
+
+		</div>
+	</div>
+
+	<!-- /newsletter-->
+	<!-- <div class="newsletter_w3layouts_agile">
+		<div class="col-sm-6 newsleft">
+			<h3>Sign up for Newsletter !</h3>
+		</div>
+		<div class="col-sm-6 newsright">
+			<form action="#" method="post">
+				<input type="email" placeholder="Enter your email..." name="email" required="">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+		<div class="clearfix"></div>
+	</div> -->
+	<!-- //newsletter-->
+	<!-- footer -->
+	
+	{% endblock %}	
